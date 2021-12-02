@@ -6,7 +6,7 @@ Read the [Blog post: Building an Automated Screenshot Service on Netlify in ~140
 
 ## Deploy
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/11ty/api-screenshot
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/api-screenshot
 "><img src="https://www.netlify.com/img/deploy/button.svg" border="0" alt="Deploy to Netlify"></a>
 
 
