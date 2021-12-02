@@ -123,8 +123,9 @@ async function handler(event, context) {
     if(!isFullUrl(url)) {
       throw new Error(`Invalid \`url\`: ${url}`);
     }
-    let url = new URL(url);
-    if(!url.origin || !url.origin.endsWith(".netlify.com")) {
+
+    let urlObj = new URL(url);
+    if(!urlObj.origin || !urlObj.origin.endsWith(".netlify.com")) {
       throw new Error(`Invalid \`url\` (only .netlify.com URLs allowed): ${url}`);
     }
 
