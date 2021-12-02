@@ -1,23 +1,22 @@
 {
-  "name": "eleventy-api-screenshot",
+  "name": "netlify-api-screenshot",
   "version": "1.0.0",
-  "description": "A service to add web page screenshots to your Eleventy sites.",
+  "description": "A service to take screenshots of web sites.",
   "scripts": {},
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/11ty/api-screenshot.git"
+    "url": "git+https://github.com/netlify/api-screenshot.git"
   },
   "author": {
     "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "email": "zach@netlify.com"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/11ty/api-screenshot/issues"
+    "url": "https://github.com/netlify/api-screenshot/issues"
   },
-  "homepage": "https://github.com/11ty/api-screenshot#readme",
+  "homepage": "https://github.com/netlify/api-screenshot#readme",
   "dependencies": {
     "@netlify/functions": "^0.7.2",
     "chrome-aws-lambda": "^10.1.0",
