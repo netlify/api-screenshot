@@ -34,6 +34,11 @@ async function screenshot(url, format, viewportSize, dpr = 1, withJs = true) {
     waitUntil: ["load", "networkidle0"],
     timeout: 8500
   });
+
+  await page.addStyleTag({
+    url: "https://add-emoji--internal-api-screenshot.netlify.app/static/fonts.css"
+  });
+
   // let statusCode = response.status();
   // TODO handle 404/500 status codes better
 
