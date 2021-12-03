@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
 
 @font-face {
-  font-family: ScreenshotCustomEmoji;
+  font-family: NetlifyApiScreenshotColorEmoji;
   src: url("NotoColorEmoji.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: NetlifyApiScreenshotColorMonospace;
+  src: url("NotoSansMono-Regular.ttf") format("truetype");
+}
+
 :root {
-  --netlify-api-screenshot--emoji: ScreenshotCustomEmoji;
-  --netlify-api-screenshot--monospace: JetBrains Mono, monospace;
+  --netlify-api-screenshot--emoji: NetlifyApiScreenshotColorEmoji;
+  --netlify-api-screenshot--monospace: NetlifyApiScreenshotColorMonospace;
 }
 .netlify-api-screenshot--emoji {
-  font-family: ScreenshotCustomEmoji;
+  font-family: NetlifyApiScreenshotColorEmoji;
 }
 .netlify-api-screenshot--monospace {
-  font-family: JetBrains Mono, monospace;
+  font-family: NetlifyApiScreenshotColorMonospace;
 }
