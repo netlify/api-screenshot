@@ -1,6 +1,11 @@
 [functions]
 directory = "functions"
 
+[[headers]]
+  for = "/static/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
 [[redirects]]
 from = "/static/*"
 to = "/static/:splat"
