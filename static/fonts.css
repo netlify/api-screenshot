@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
 
 @font-face {
   font-family: ScreenshotCustomEmoji;
   src: url("NotoColorEmoji.ttf") format("truetype");
 }
 
+:root {
+  --netlify-api-screenshot--emoji: ScreenshotCustomEmoji;
+  --netlify-api-screenshot--monospace: JetBrains Mono, monospace;
+}
 .netlify-api-screenshot--emoji {
   font-family: ScreenshotCustomEmoji;
 }
