@@ -1,5 +1,7 @@
-[functions]
+[build]
 publish = "static"
+
+[functions]
 directory = "functions"
 
 [[redirects]]
