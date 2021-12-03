@@ -130,8 +130,8 @@ async function handler(event, context) {
     }
 
     let urlObj = new URL(url);
-    if(!urlObj.origin || !urlObj.origin.endsWith(".netlify.com")) {
-      throw new Error(`Invalid \`url\` (only .netlify.com URLs allowed): ${url}`);
+    if(!urlObj.origin || !urlObj.origin.endsWith(".netlify.com") && !urlObj.origin.endsWith(".netlify.app")) {
+      throw new Error(`Invalid \`url\` (only .netlify.com and .netlify.app URLs allowed): ${url}`);
     }
 
     if(!viewport || viewport.length !== 2) {
