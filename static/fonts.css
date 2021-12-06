@@ -1,8 +1,7 @@
 @font-face {
   font-family: NetlifyApiScreenshotColorEmoji;
-  src: url("NotoColorEmoji.ttf") format("truetype");
+  src: url("NotoColorEmoji.woff2") format("woff2");
 }
-
 @font-face {
   font-family: NetlifyApiScreenshotColorMonospace;
   src: url("NotoSansMono-Regular.ttf") format("truetype");
@@ -17,4 +16,14 @@
 }
 .netlify-api-screenshot--monospace {
   font-family: NetlifyApiScreenshotColorMonospace;
+}
+
+/* Project specific subset */
+@font-face {
+  font-family: yyo-NetlifyApiScreenshotColorEmoji;
+  src: url("yyo-NotoColorEmoji-subset.woff2") format("woff2");
+  unicode-range: U+2728,U+1F344,U+1F3C6,U+1F3D7,U+1F440,U+1F50C,U+1F5D3,U+1F680;
+}
+.yyo-netlify-api-screenshot--emoji {
+  font-family: yyo-NetlifyApiScreenshotColorEmoji;
 }
