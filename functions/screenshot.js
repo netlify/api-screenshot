@@ -36,7 +36,7 @@ async function screenshot(url, format, viewportSize, dpr = 1, withJs = true) {
   });
 
   await page.addStyleTag({
-    url: "https://add-emoji--internal-api-screenshot.netlify.app/static/fonts.css"
+    url: "https://internal-api-screenshot.netlify.app/static/fonts.css"
   });
 
   // let statusCode = response.status();
