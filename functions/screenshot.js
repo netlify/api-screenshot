@@ -36,7 +36,8 @@ async function screenshot(url, format, viewportSize, dpr = 1, withJs = true) {
   });
 
   await page.addStyleTag({
-    url: "https://internal-api-screenshot.netlify.app/static/fonts.css"
+    // url: "https://internal-api-screenshot.netlify.app/static/fonts.css"
+    content: `@import "https://internal-api-screenshot.netlify.app/static/fonts.css";`
   });
 
   // let statusCode = response.status();
